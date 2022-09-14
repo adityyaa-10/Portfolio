@@ -194,7 +194,9 @@ ul{
     display: flex;
     color: var(--text-black-900);
 }
-
+/* .hidden{
+    display: none !important;
+} */
 .home .home-img img{
     height: 350px;
     margin: auto;
@@ -234,3 +236,12 @@ h3.my-profession{
     text-align: center;
     position: relative;
 }
+.section .container{
+     padding-top: 60px;
+     padding-bottom: 70px;
+}
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background-color: red; */
+} 
