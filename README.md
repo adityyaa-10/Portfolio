@@ -1,5 +1,12 @@
 <h2 align="center"> Portfolio Website </h2>
 
+
+
+### Prerequisites
+
+1. VS Code
+2. Live Server Extension 
+
 <h3>To acess the project, follow these steps:</h3>
 
 1. Fork the project.
