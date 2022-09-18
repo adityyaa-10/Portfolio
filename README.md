@@ -50,5 +50,6 @@ cd Dummy-Gym-Website
 $ code .
 ```
 
-**7.** Click on **Go Live** Button
+**7.** Click on **Go Live** Button and you are good to Go.
+
 
