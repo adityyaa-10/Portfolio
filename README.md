@@ -4,8 +4,9 @@
 
 ### Prerequisites
 
-1. VS Code
-2. Live Server Extension 
+1. <a href="https://code.visualstudio.com/download"> VS Code </a>
+2. <a href="https://git-scm.com/downloads"> Git Bash </a>
+3. Live Server Extension in VS Code
 
 <h3>To acess the project, follow these steps:</h3>
 
