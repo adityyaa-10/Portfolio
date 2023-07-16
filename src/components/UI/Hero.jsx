@@ -85,7 +85,7 @@ const Hero = () => {
                     </div>
 
                     <div className='md:basis-1/5 flex justify-between text-center mt-10 flex-wrap gap-3 md:mt-0
-                    md:flex-col md:justify-end md:text-end'>
+                    md:flex-col md:justify-end md:text-end mx-auto w-full'>
                         <div className='mb-10'>
                             <h2 className='text-headingColor font-[700] text-[32px]'>
                                 <CountUp start={0} end={1} duration={2} suffix='+' />
