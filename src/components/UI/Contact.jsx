@@ -36,7 +36,7 @@ const Contact = () => {
                             <div className="mb-5">
                                 <textarea
                                     type="text"
-                                    rows={5}
+                                    rows={4}
                                     placeholder='Enter your message'
                                     className='w-full p-3 focus:outline-none rounded-[5px]'
                                 />

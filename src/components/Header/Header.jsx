@@ -1,8 +1,41 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 
 const Header = () => {
+
+    const headerRef = useRef(null);
+    const menuRef = useRef(null);
+
+    const stickyHeaderFunc = () => {
+        window.addEventListener('scroll', () => {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                headerRef.current.classList.add('sticky_header')
+            } else {
+                headerRef.current.classList.remove('sticky_header')
+            }
+        })
+
+    }
+
+    useEffect(() => {
+        stickyHeaderFunc()
+        return window.removeEventListener('scroll', stickyHeaderFunc)
+
+    }, [])
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        const targetAttr = e.target.getAttribute('href')
+        const location = document.querySelector(targetAttr).offsetTop;
+
+        window.scrollTo({
+            top: location - 80,
+            left: 0,
+        })
+    }
+
+    const toggleMenu = () => menuRef.current.classList.toggle('show_menu')
     return (
-        <header className='w-full h-[80px] flex items-center'>
+        <header ref={headerRef} className='w-full h-[80px] flex items-center'>
             <div className='container'>
                 <div className='flex items-center justify-between'>
                     <div className='flex items-center gap-[10px]'>
@@ -12,12 +45,12 @@ const Header = () => {
                             <p className='text-smallTextColor text-[14px] font-[500]'>Pandey</p>
                         </div>
                     </div>
-                    <div className='menu'>
+                    <div ref={menuRef} onClick={toggleMenu} className='menu'>
                         <ul className='flex items-center gap-10'>
-                            <li><a className='text-smallTextColor font-[600]' href="#about">About</a></li>
-                            <li><a className='text-smallTextColor font-[600]' href="#services">Services</a></li>
-                            <li><a className='text-smallTextColor font-[600]' href="#portfolio">Portfolio</a></li>
-                            <li><a className='text-smallTextColor font-[600]' href="#contact">Contact</a></li>
+                            <li><a onClick={handleClick} className='text-smallTextColor font-[600]' href="#about">About</a></li>
+                            <li><a onClick={handleClick} className='text-smallTextColor font-[600]' href="#services">Services</a></li>
+                            <li><a onClick={handleClick} className='text-smallTextColor font-[600]' href="#portfolio">Portfolio</a></li>
+                            <li><a onClick={handleClick} className='text-smallTextColor font-[600]' href="#contact">Contact</a></li>
                         </ul>
                     </div>
 
@@ -27,7 +60,7 @@ const Header = () => {
                         hover:text-white hover:font-[500] ease-in duration-300'>
                             <i class="ri-send-plane-line"></i> Let's Talk
                         </button>
-                        <span className='text-2xl text-smallTextColor md:hidden cursor-pointer'>
+                        <span onClick={toggleMenu} className='text-2xl text-smallTextColor md:hidden cursor-pointer'>
                             <i className='ri-menu-line'></i>
                         </span>
 
