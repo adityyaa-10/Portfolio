@@ -23,13 +23,17 @@ const Portfolio = () => {
             setPortfolios(data)
         }
 
-        if (selectTab === 'web-design') {
-            const filteredData = data.filter(item => item.category === 'Web Design')
+        if (selectTab === 'Frontend') {
+            const filteredData = data.filter(item => item.category === 'Frontend')
             setPortfolios(filteredData)
         }
 
-        if (selectTab === 'ux-design') {
-            const filteredData = data.filter(item => item.category === 'Ux')
+        if (selectTab === 'js-basics') {
+            const filteredData = data.filter(item => item.category === 'JS Basics')
+            setPortfolios(filteredData)
+        }
+        if (selectTab === 'CRUD') {
+            const filteredData = data.filter(item => item.category === 'CRUD')
             setPortfolios(filteredData)
         }
     }, [selectTab])
@@ -47,11 +51,14 @@ const Portfolio = () => {
                         <button onClick={() => setSelectTab('all')} className='text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>
                             All Projects
                         </button>
-                        <button onClick={() => setSelectTab('web-design')} className='text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>
+                        <button onClick={() => setSelectTab('Frontend')} className='text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>
                             Frontend
                         </button>
-                        <button onClick={() => setSelectTab('ux-design')} className='text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>
-                            CRUD Apps
+                        <button onClick={() => setSelectTab('js-basics')} className='text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>
+                            JS Basics
+                        </button>
+                        <button onClick={() => setSelectTab('CRUD')} className='text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>
+                            CRUD
                         </button>
                     </div>
                 </div>
@@ -60,13 +67,13 @@ const Portfolio = () => {
                     {portfolios.slice(0, nextItems)?.map((portfolio, index) => (
                         <div
                             data-aos="fade-zoom-in"
-                            data-aos-delay="100"
+                            data-aos-delay="50"
                             data-aos-duration="1000"
                             className='group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z[1]'
                             key={index}
                         >
                             <figure>
-                                <img className='rounded-[8px]' src={portfolio.imgUrl} alt="" />
+                                <img className='rounded-[8px] shadow-md' src={portfolio.imgUrl} alt="" />
                             </figure>
 
                             <div className='w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block'>

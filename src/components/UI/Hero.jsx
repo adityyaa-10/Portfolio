@@ -1,7 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import heroImg from '../../assets/images/hero.svg'
+import heroImg from '../../assets/images/adi.jpeg'
 import CountUp from 'react-countup'
+const handleDownloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '../../assets/cv/adiCV.pdf'; // Replace with the actual URL of the PDF file
+    link.download = 'adiCV.pdf'; // Replace with the desired file name
+    link.click();
+};
 const Hero = () => {
     return (
         <section className='pt-0' id='about'>
@@ -30,12 +36,14 @@ const Hero = () => {
                             data-aos-delay="200"
                             className='flex items-center gap-6 mt-7'
                         >
-                            <a href="#contact">
-                                <button className='bg-primaryColor text-white font-[500] flex items-center 
-                                gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]'>
-                                    <i className='ri-mail-line'></i> Hire me
-                                </button>
-                            </a>
+
+                            <button
+                                onClick={handleDownloadCV}
+                                className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]"
+                            >
+                                <i className="ri-mail-line"></i> Download CV
+                            </button>
+
                             <a href="#portfolio" className='text-smallTextColor font-[600] text-[16px] border-b border-solid
                             border-smallTextColor'
                             >
@@ -48,7 +56,7 @@ const Hero = () => {
                             className='flex gap-2 text-headingColor font-[500] mt-14 text-[15px] leading-7 sm:pl-14 sm:pr-10'
                         >
                             <span> <i className='ri-apps-2-line'></i></span>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda quod ab et.
+                            B.Tech in Computer Science <br />@ KIET Group of Instituitions (2021-2025)
                         </p>
 
                         <div className='flex item-center gap-9 mt-14'>
@@ -56,22 +64,17 @@ const Hero = () => {
                                 Connect
                             </span>
                             <span>
-                                <a href="#" className='text-smallTextColor text-[18px] font-[600]'>
+                                <a href="https://github.com/adityyaa-10" className='text-smallTextColor text-[18px] font-[600]'>
                                     <i className='ri-github-fill'></i>
                                 </a>
                             </span>
                             <span>
-                                <a href="#" className='text-smallTextColor text-[18px] font-[600]'>
+                                <a href="https://twitter.com/adityyaa_10" className='text-smallTextColor text-[18px] font-[600]'>
                                     <i className='ri-twitter-fill'></i>
                                 </a>
                             </span>
                             <span>
-                                <a href="#" className='text-smallTextColor text-[18px] font-[600]'>
-                                    <i className='ri-instagram-line'></i>
-                                </a>
-                            </span>
-                            <span>
-                                <a href="#" className='text-smallTextColor text-[18px] font-[600]'>
+                                <a href="https://www.linkedin.com/in/adityyaa10/" className='text-smallTextColor text-[18px] font-[600]'>
                                     <i className='ri-linkedin-line'></i>
                                 </a>
                             </span>
@@ -80,7 +83,7 @@ const Hero = () => {
 
                     <div className='basis-1/3 mt-10 sm:mt-0'>
                         <figure className='flex items-center justify-center'>
-                            <img src={heroImg} alt="" />
+                            <img src={heroImg} alt="" className='rounded-md max-h-[500px] m-auto' />
                         </figure>
                     </div>
 

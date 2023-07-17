@@ -8,8 +8,7 @@ const Services = () => {
                 <div className='text-center'>
                     <h2 className='text-headingColor font-[800] text-[2.4rem] mb-5'>What do I help</h2>
                     <p className='lg:max-w-[600px] lg:mx-auto text-headingColor font-[500] text-[16px] leading-7'>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet assumenda, ex dignissimos ad quibusdam pariatur eius accusamus cum numquam aliquid! Veniam maiores consectetur natus mollitia consequuntur voluptates eos explicabo quae.
-                    </p>
+                        I am currently learning and developing skills as a full-stack MERN developer. Proficient in Git and GitHub, and actively contribute to open source projects.                    </p>
                 </div>
 
                 <div className='flex flex-col justify-center sm:py-12'>
@@ -25,10 +24,9 @@ const Services = () => {
                                             <div data-aos="fade-right" data-aos-duration="1200"
                                                 className='bg-white p-4 shadow-xl rounded-lg group hover:bg-primaryColor cursor-pointer ease-in duration-150'>
                                                 <h3 className='text-primaryColor font-[700] mb-3 group-hover:text-white
-                                                group-hover:font-[600] text-xl'>Frontend Development</h3>
-                                                <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500]'>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, earum accusamus.
-                                                </p>
+                                                 text-xl'>Frontend Development</h3>
+                                                <p className='text-[15px] text-smallTextColor group-hover:text-white '>
+                                                    I possess strong proficiency in React and Tailwind CSS, enabling me to develop responsive and visually appealing front-end applications efficiently.                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -49,10 +47,9 @@ const Services = () => {
                                             <div data-aos="fade-left" data-aos-duration="1200"
                                                 className='bg-white p-4 shadow-xl rounded-lg group hover:bg-primaryColor cursor-pointer ease-in duration-150'>
                                                 <h3 className='text-primaryColor font-[700] mb-3 group-hover:text-white
-                                                group-hover:font-[600] text-xl'>Backend Development</h3>
-                                                <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500]'>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, earum accusamus.
-                                                </p>
+                                                 text-xl'>Backend Development</h3>
+                                                <p className='text-[15px] text-smallTextColor group-hover:text-white '>
+                                                    I specialize in developing the back-end using Node.js and Express.js, while leveraging MongoDB as the database of choice. This enables me to create robust and scalable back-end solutions for various applications.                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -73,10 +70,9 @@ const Services = () => {
                                             <div data-aos="fade-right" data-aos-duration="1200"
                                                 className='bg-white p-4 rounded-lg shadow-xl group hover:bg-primaryColor cursor-pointer ease-in duration-150'>
                                                 <h3 className='text-primaryColor font-[700] mb-3 group-hover:text-white
-                                                group-hover:font-[600] text-xl'>Version Control </h3>
-                                                <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500]'>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, earum accusamus.
-                                                </p>
+                                                 text-xl'>Version Control </h3>
+                                                <p className='text-[15px] text-smallTextColor group-hover:text-white '>
+                                                    I have acquired a comprehensive understanding of Git and GitHub, allowing me to effectively utilize version control and collaboration tools for efficient project management and contribution.                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -97,10 +93,9 @@ const Services = () => {
                                             <div data-aos="fade-left" data-aos-duration="1200"
                                                 className='bg-white p-4 shadow-xl rounded-lg group hover:bg-primaryColor cursor-pointer ease-in duration-150'>
                                                 <h3 className='text-primaryColor font-[700] mb-3 group-hover:text-white
-                                                group-hover:font-[600] text-xl'>API Connection</h3>
-                                                <p className='text-[15px] text-smallTextColor group-hover:text-white group-hover:font-[500]'>
-                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, earum accusamus.
-                                                </p>
+                                                 text-xl'>API and Authentication</h3>
+                                                <p className='text-[15px] text-smallTextColor group-hover:text-white '>
+                                                    I excel in establishing API connections using Fetch API and Axios, along with expertise in implementing token-based authentication and efficient session management for enhanced security and seamless user experiences.                                                </p>
                                             </div>
                                         </div>
                                     </div>
