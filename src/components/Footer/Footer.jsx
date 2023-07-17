@@ -17,8 +17,7 @@ const Footer = () => {
 
                     <div className="w-full sm:w-1/2">
                         <p className='text-gray-300 leading-7 mt-4 sm:mt-0'>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quos distinctio eos. Velit illo vero vel molestias distinctio, facilis numquam?
-                        </p>
+                            "Hire me, a skilled MERN developer, to transform your ideas into seamless, innovative, and scalable web applications."                        </p>
 
                         <div className="flex items-center gap-4 flex-wrap md:gap-8 mt-10">
                             <span className="text-gray-300 font-[700] text-[15px]">
@@ -26,22 +25,17 @@ const Footer = () => {
                             </span>
 
                             <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'>
-                                <a href="#github" className='text-gray-300 font-[500] text-[18px]'>
+                                <a href="https://github.com/adityyaa-10" className='text-gray-300 font-[500] text-[18px]'>
                                     <i className='ri-github-line'></i>
                                 </a>
                             </span>
                             <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'>
-                                <a href="#github" className='text-gray-300 font-[500] text-[18px]'>
+                                <a href="#https://twitter.com/adityyaa_10" className='text-gray-300 font-[500] text-[18px]'>
                                     <i className='ri-twitter-line'></i>
                                 </a>
                             </span>
                             <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'>
-                                <a href="#github" className='text-gray-300 font-[500] text-[18px]'>
-                                    <i className='ri-instagram-line'></i>
-                                </a>
-                            </span>
-                            <span className='w-[35px] h-[35px] bg-[#2b2d33] p-1 rounded-[50px] cursor-pointer text-center'>
-                                <a href="#github" className='text-gray-300 font-[500] text-[18px]'>
+                                <a href="#https://www.linkedin.com/in/adityyaa10/" className='text-gray-300 font-[500] text-[18px]'>
                                     <i className='ri-linkedin-line'></i>
                                 </a>
                             </span>
@@ -73,7 +67,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <div>
-                            <p className='text-gray-400 text-[14px]'>Made with 0 by Aditya </p>
+                            <p className='text-gray-400 text-[14px]'>Made with 🩷 by Aditya </p>
                         </div>
                     </div>
                 </div>
