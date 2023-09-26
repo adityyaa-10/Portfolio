@@ -2,13 +2,18 @@
 import React from 'react'
 import heroImg from '../../assets/images/adi.jpeg'
 import CountUp from 'react-countup'
-const handleDownloadCV = () => {
-    const link = document.createElement('a');
-    link.href = '../../assets/cv/adiCV.pdf'; // Replace with the actual URL of the PDF file
-    link.download = 'adiCV.pdf'; // Replace with the desired file name
-    link.click();
-};
+
 const Hero = () => {
+    const openPdfInNewTab = () => {
+        const pdfPath = '/resume.pdf';
+        const fullUrl = process.env.PUBLIC_URL + pdfPath;
+        const newWindow = window.open(fullUrl, '_blank');
+        if (newWindow) {
+            // pass
+        } else {
+            console.error('The new window could not be opened.');
+        }
+    };
     return (
         <section className='pt-0' id='about'>
             <div className='container pt-14'>
@@ -38,7 +43,7 @@ const Hero = () => {
                         >
 
                             <button
-                                onClick={handleDownloadCV}
+                                onClick={openPdfInNewTab}
                                 className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]"
                             >
                                 <i className="ri-mail-line"></i> Download CV
@@ -97,7 +102,7 @@ const Hero = () => {
                         </div>
                         <div className='mb-10'>
                             <h2 className='text-headingColor font-[700] text-[32px]'>
-                                <CountUp start={0} end={800} duration={2} suffix='+' />
+                                <CountUp start={0} end={1000} duration={2} suffix='+' />
                             </h2>
                             <h4 className='text-headingColor font-[600] text-[18px]'>GitHub Contributions</h4>
                         </div>
