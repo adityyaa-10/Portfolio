@@ -32,7 +32,7 @@ const Hero = () => {
                             className='text-headingColor font-[800] text-[1.8rem] sm:text-[40px] leading-[35px] sm:leading-[46px] mt-5'
                         >
                             I am Aditya Pandey <br />
-                            MERN Developer
+                            Full Stack Developer
                         </h1>
 
                         <div
@@ -46,7 +46,7 @@ const Hero = () => {
                                 onClick={openPdfInNewTab}
                                 className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]"
                             >
-                                <i className="ri-mail-line"></i> Download CV
+                                <i className="ri-mail-line"></i> View Resume
                             </button>
 
                             <a href="#portfolio" className='text-smallTextColor font-[600] text-[16px] border-b border-solid
