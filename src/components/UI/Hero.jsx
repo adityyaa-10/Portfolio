@@ -1,19 +1,6 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react'
-import heroImg from '../../assets/images/adi.jpeg'
-import CountUp from 'react-countup'
+import heroImg from '../../assets/images/adi.jpg'
 
 const Hero = () => {
-    const openPdfInNewTab = () => {
-        const pdfPath = '/resume.pdf';
-        const fullUrl = process.env.PUBLIC_URL + pdfPath;
-        const newWindow = window.open(fullUrl, '_blank');
-        if (newWindow) {
-            // pass
-        } else {
-            console.error('The new window could not be opened.');
-        }
-    };
     return (
         <section className='pt-0' id='about'>
             <div className='container pt-14'>
@@ -41,13 +28,13 @@ const Hero = () => {
                             data-aos-delay="200"
                             className='flex items-center gap-6 mt-7'
                         >
-
-                            <button
-                                onClick={openPdfInNewTab}
-                                className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]"
-                            >
-                                <i className="ri-mail-line"></i> View Resume
-                            </button>
+                            <a target='_blank' rel='noreferrer' href="https://drive.google.com/file/d/1PRqf8qiu_RD2cy9M65IUJbhX6p9KOrf2/view?usp=sharing">
+                                <button
+                                    className="bg-primaryColor text-white font-[500] flex items-center gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]"
+                                >
+                                    <i className="ri-mail-line"></i> View Resume
+                                </button>
+                            </a>
 
                             <a href="#portfolio" className='text-smallTextColor font-[600] text-[16px] border-b border-solid
                             border-smallTextColor'
@@ -65,21 +52,18 @@ const Hero = () => {
                         </p>
 
                         <div className='flex item-center gap-9 mt-14'>
-                            <span className='text-smallTextColor text-[15px] font-[600]'>
-                                Connect
-                            </span>
                             <span>
-                                <a href="https://github.com/adityyaa-10" className='text-smallTextColor text-[18px] font-[600]'>
+                                <a href="https://github.com/adityyaa-10" className='text-smallTextColor text-[20px] font-[600]'>
                                     <i className='ri-github-fill'></i>
                                 </a>
                             </span>
                             <span>
-                                <a href="https://twitter.com/adityyaa_10" className='text-smallTextColor text-[18px] font-[600]'>
+                                <a href="https://twitter.com/adityyaa_10" className='text-smallTextColor text-[20px] font-[600]'>
                                     <i className='ri-twitter-fill'></i>
                                 </a>
                             </span>
                             <span>
-                                <a href="https://www.linkedin.com/in/adityyaa10/" className='text-smallTextColor text-[18px] font-[600]'>
+                                <a href="https://www.linkedin.com/in/adityyaa10/" className='text-smallTextColor text-[20px] font-[600]'>
                                     <i className='ri-linkedin-line'></i>
                                 </a>
                             </span>
@@ -91,36 +75,6 @@ const Hero = () => {
                             <img src={heroImg} alt="" className='rounded-md max-h-[500px] m-auto' />
                         </figure>
                     </div>
-
-                    <div className='md:basis-1/5 flex justify-between text-center mt-10 flex-wrap gap-3 md:mt-0
-                    md:flex-col md:justify-end md:text-end mx-auto w-full'>
-                        <div className='mb-10'>
-                            <h2 className='text-headingColor font-[700] text-[32px]'>
-                                <CountUp start={0} end={1} duration={2} suffix='+' />
-                            </h2>
-                            <h4 className='text-headingColor font-[600] text-[18px]'>Year Of Experience</h4>
-                        </div>
-                        <div className='mb-10'>
-                            <h2 className='text-headingColor font-[700] text-[32px]'>
-                                <CountUp start={0} end={1000} duration={2} suffix='+' />
-                            </h2>
-                            <h4 className='text-headingColor font-[600] text-[18px]'>GitHub Contributions</h4>
-                        </div>
-                        <div className='mb-10'>
-                            <h2 className='text-headingColor font-[700] text-[32px]'>
-                                <CountUp start={0} end={118} duration={2} suffix='' />
-                            </h2>
-                            <h4 className='text-headingColor font-[600] text-[18px]'>Longest Commit Streak</h4>
-                        </div>
-                        <div className='mb-10'>
-                            <h2 className='text-headingColor font-[700] text-[32px]'>
-                                <CountUp start={0} end={4} duration={2} suffix='+' />
-                            </h2>
-                            <h4 className='text-headingColor font-[600] text-[18px]'>Merged Request in Hacktoberfest</h4>
-                        </div>
-                    </div>
-
-
                 </div>
             </div>
         </section>

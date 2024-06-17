@@ -7,7 +7,7 @@ const Footer = () => {
                 <div className="sm:flex items-center justify-between md:gap-0">
                     <div className="w-full sm:w-1/2">
                         <h2 className="text-[26px] leading-10 text-white font-[600] mb-5 md:text-[2rem]">Do you want to make beautiful products?</h2>
-                        <a href="#contact">
+                        <a href="mailto:aditya.pamdey.241103@gmail.com">
                             <button className='bg-primaryColor text-white font-[500] flex items-center 
                                 gap-2 hover:bg-smallTextColor ease-in duration-300 py-2 px-4 rounded-[8px]'>
                                 <i className='ri-mail-line'></i> Hire me
@@ -45,9 +45,8 @@ const Footer = () => {
                 <div>
                     <ul className='flex items-center justify-center  gap-10 mt-10'>
                         <li><a className='text-gray-400 font-[600]' href="#about">About</a></li>
-                        <li><a className='text-gray-400 font-[600]' href="#services">Services</a></li>
                         <li><a className='text-gray-400 font-[600]' href="#portfolio">Portfolio</a></li>
-                        <li><a className='text-gray-400 font-[600]' href="#contact">Contact</a></li>
+                        <li><a className='text-gray-400 font-[600]' href="#services">Services</a></li>
                     </ul>
                 </div>
             </div>

@@ -23,17 +23,13 @@ const Portfolio = () => {
             setPortfolios(data)
         }
 
-        if (selectTab === 'Frontend') {
-            const filteredData = data.filter(item => item.category === 'Frontend')
+        if (selectTab === 'MVP') {
+            const filteredData = data.filter(item => item.category === 'MVP')
             setPortfolios(filteredData)
         }
 
-        if (selectTab === 'js-basics') {
-            const filteredData = data.filter(item => item.category === 'JS Basics')
-            setPortfolios(filteredData)
-        }
-        if (selectTab === 'CRUD') {
-            const filteredData = data.filter(item => item.category === 'CRUD')
+        if (selectTab === 'Practice') {
+            const filteredData = data.filter(item => item.category === 'Practice')
             setPortfolios(filteredData)
         }
     }, [selectTab])
@@ -51,14 +47,11 @@ const Portfolio = () => {
                         <button onClick={() => setSelectTab('all')} className='text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>
                             All Projects
                         </button>
-                        <button onClick={() => setSelectTab('Frontend')} className='text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>
-                            Frontend
+                        <button onClick={() => setSelectTab('MVP')} className='text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>
+                            MVP
                         </button>
-                        <button onClick={() => setSelectTab('js-basics')} className='text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>
-                            JS Basics
-                        </button>
-                        <button onClick={() => setSelectTab('CRUD')} className='text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>
-                            CRUD
+                        <button onClick={() => setSelectTab('Practice')} className='text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>
+                            Practice Mini Projects
                         </button>
                     </div>
                 </div>
@@ -73,7 +66,7 @@ const Portfolio = () => {
                             key={index}
                         >
                             <figure>
-                                <img className='rounded-[8px] shadow-md' src={portfolio.imgUrl} alt="" />
+                                <img className='rounded-[8px] h-[200px] shadow-md' src={portfolio.imgUrl} alt="" />
                             </figure>
 
                             <div className='w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block'>
