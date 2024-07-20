@@ -10,6 +10,7 @@ import p4 from "../images/offcampushire.png"
 import p6 from "../images/careersense.png"
 import p7 from "../images/ulearner.png"
 import p5 from "../images/tbikiet.png"
+import p13 from "../images/realternships.png"
 
 const portfolios = [
   {
@@ -37,7 +38,7 @@ const portfolios = [
     title: "Coderships",
     description: "A competition website to land dream internships",
     technologies: ["Next.js", "Tailwind CSS", "Million js"],
-    siteUrl: "https://coderships.vercel.app/",
+    siteUrl: "",
   },
   {
     id: "04",
@@ -46,7 +47,7 @@ const portfolios = [
     title: "OffCampusHire",
     description: "Startup MVP to simplify off campus hiring process for students and companies",
     technologies: ["Next.js", "Tailwind CSS", "Million js"],
-    siteUrl: "https://offcampushire.vercel.app/",
+    siteUrl: "",
   },
   {
     id: "05",
@@ -58,13 +59,23 @@ const portfolios = [
     siteUrl: "https://tbikiet.vercel.app/",
   },
   {
+    id: "13",
+    imgUrl: p13,
+    category: "MVP",
+    title: "Realternships",
+    description:
+      "Startup MVP to give students a platform to find internships and projects.",
+    technologies: ["Next.js", "Tailwind CSS", "Figma", "Swiper JS"],
+    siteUrl: "",
+  },
+  {
     id: "06",
     imgUrl: p6,
     category: "MVP",
     title: "Career Sense",
     description: "Startup MVP to spread awareness about career opportunities for students and professionals",
     technologies: ["Next.js", "Tailwind CSS", "React-slick"],
-    siteUrl: "https://next14-seven-ashen.vercel.app/workex",
+    siteUrl: "",
   },
   {
     id: "07",
@@ -73,7 +84,7 @@ const portfolios = [
     title: "Ulearner",
     description: "Startup MVP to provide all in one marketplace for learning tech",
     technologies: ["Next.js", "Tailwind CSS"],
-    siteUrl: "https://ulearnerrrr.netlify.app/courses",
+    siteUrl: "",
   },
   {
     id: "08",
@@ -124,6 +135,7 @@ const portfolios = [
     technologies: ["HTML", "Bootstrap", "JavaScript"],
     siteUrl: "https://github.com/adityyaa-10/Projects-JavaScript/tree/main/Project%20-%203%20%20%7BToDo%20List%7D",
   },
+
 ];
 
 export default portfolios;
